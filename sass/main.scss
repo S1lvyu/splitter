@@ -1,0 +1,265 @@
+@import "vars";
+body {
+  font-family: $main-font-family;
+  font-weight: $font-weight-700;
+  color: $text-color;
+  background-color: $background-color;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-logo {
+  padding: 50px 144px 40px 144px;
+}
+
+.tips-input {
+  background-color: white;
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  border-radius: 25px 25px 0px 0px;
+  height: 789px;
+  position: relative;
+  &__text {
+    padding-bottom: 16px;
+    padding-left: 32px;
+  }
+}
+.bill-value {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 6px;
+  position: relative;
+  &__input {
+    width: 311px;
+    height: 38px;
+    border: none;
+    background-color: $input-background-color;
+    border-radius: 5px;
+    font-family: $main-font-family;
+
+    font-weight: $font-weight-700;
+    font-size: $font-size-24;
+    line-height: 36px;
+    text-align: right;
+    color: $main-green-color;
+    &:focus {
+      border: 2px solid $secondary-green-color;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 72px;
+    left: 45px;
+  }
+}
+.select-tips {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 0 32px 32px;
+  &__option {
+    background: #00474b;
+    border-radius: 5px;
+    width: 146px;
+    height: 48px;
+    font-family: $main-font-family;
+    font-weight: $font-weight-700;
+    font-size: $font-size-24;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $main-green-color;
+      background-color: $secondary-green-color;
+      cursor: pointer;
+    }
+
+    &--custom {
+      width: 142px;
+      border: none;
+      height: 46px;
+      background: #f3f9fa;
+      color: #00474b;
+    }
+  }
+}
+
+.people-number {
+  display: flex;
+  flex-direction: column;
+  padding: 0 32px 32px;
+  gap: 6px;
+  position: relative;
+  &__input {
+    width: 311px;
+    height: 38px;
+    border: none;
+    background-color: $input-background-color;
+    border-radius: 5px;
+    font-family: $main-font-family;
+
+    font-weight: $font-weight-700;
+    font-size: $font-size-24;
+    line-height: 36px;
+    text-align: right;
+    color: $main-green-color;
+    &:focus {
+      border: 2px solid $secondary-green-color;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+  &__icon {
+    left: 40px;
+    top: 40px;
+    position: absolute;
+  }
+}
+.results-container {
+  width: 327px;
+  height: 257px;
+  background: $main-green-color;
+  border-radius: 15px;
+  top: 655px;
+  left: 25px;
+  position: absolute;
+}
+.lists-container {
+  display: flex;
+  padding: 37px 22px 32px 24px;
+}
+.first-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__item {
+    font-size: $font-size-16;
+    line-height: 24px;
+
+    color: #ffffff;
+  }
+  &__span {
+    font-size: $font-size-13;
+    line-height: 19px;
+
+    color: #7f9d9f;
+  }
+}
+.second-list {
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__item {
+    font-size: 32px;
+    line-height: 47px;
+    text-align: right;
+    letter-spacing: -0.666667px;
+
+    color: $secondary-green-color;
+  }
+}
+.reset-button {
+  width: 281px;
+  height: 48px;
+  margin-left: 20px;
+  background: $secondary-green-color;
+  border-radius: 5px;
+  font-family: "Space Mono";
+  font-weight: $font-weight-700;
+  font-size: 20px;
+  line-height: 30px;
+  border: none;
+  text-align: center;
+  color: $main-green-color;
+  &:hover {
+    background: #9fe8df;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-bottom: 50px;
+  }
+
+  .page-logo {
+    padding: 163px 677px 87px;
+  }
+  .tips-input {
+    width: 920px;
+    height: 481px;
+    margin: 0 auto;
+    border-radius: 25px;
+    &__text {
+      padding-left: 48px;
+    }
+    &__container {
+      width: 379px;
+    }
+  }
+  .bill-value {
+    padding: 45px 48px 40px;
+    &__icon {
+      top: 85px;
+      left: 60px;
+    }
+    &__input {
+      width: 379px;
+    }
+  }
+  .select-tips {
+    padding-left: 48px;
+    width: 388px;
+    gap: 14px;
+    &__option {
+      width: 117px;
+    }
+  }
+  .people-number {
+    padding-left: 48px;
+    &__input {
+      width: 379px;
+    }
+    &__icon {
+      left: 61px;
+    }
+  }
+  .results-container {
+    width: 413px;
+    height: 417px;
+    top: 345px;
+    left: 730px;
+  }
+  .lists-container {
+    gap: 80px;
+    padding-bottom: 170px;
+  }
+  .first-list {
+    gap: 40px;
+  }
+  .second-list {
+    gap: 40px;
+  }
+  .reset-button {
+    margin-left: 60px;
+  }
+}
