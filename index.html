@@ -32,7 +32,7 @@
           <svg width="15px" height="17px" class="bill-value__icon">
             <use href="./images/logo.svg#dollar-icon"></use>
           </svg>
-          <input type="number" id="bill-input" class="bill-value__input" name="bill-input" />
+          <input type="number" id="bill-input" class="bill-value__input" name="bill-input" min="0"  />
         </form>
         <p class="tips-input__text">Select Tip %</p>
         <div class="select-tips">
@@ -57,7 +57,7 @@
           <svg width="13px" height="16px" class="people-number__icon">
             <use href="./images/logo.svg#man-icon"></use>
           </svg>
-          <input type="number" id="no-of-people" class="people-number__input" name="number-of-peoples" />
+          <input type="number" id="no-of-people" class="people-number__input" name="number-of-peoples" min="1" />
         </form>
         </div>
       </div>
@@ -74,13 +74,13 @@
             </li>
           </ul>
           <ul class="second-list">
-            <li class="second-list__item">$4</li>
-            <li class="second-list__item">$32</li>
+            <li class="second-list__item tip-amount">$0</li>
+            <li class="second-list__item total">$0</li>
           </ul>
         </div>
         <button type="button" class="reset-button">Reset</button>
       </div>
     </div>
-    
+    <script src="./js/index.js"></script>
   </body>
 </html>
